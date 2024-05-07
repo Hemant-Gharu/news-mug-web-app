@@ -4,7 +4,6 @@ import NewsList from "./NewsLIst";
 
 const NewsBoard = ({ category }) => {
    const [articles, setArticles] = useState([]);
-   console.log("()=>", articles);
 
    useEffect(() => {
       let url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=979c7bcaccc847fc82b52340a67c0faf`;
